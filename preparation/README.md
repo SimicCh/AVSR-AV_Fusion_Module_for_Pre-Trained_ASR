@@ -1,0 +1,27 @@
+
+
+Ablauf
+
+1. Create file.list and label.list files
+create_filelist_labellist.py 
+
+2. Split pretrain and trainval for training and validation 
+create_train_val_split.py
+
+3. Extract audio
+extract_audio.py
+
+4. Landmark detection 3ddfaV2
+"""
+git clone https://github.com/cleardusk/3DDFA_V2.git
+cd 3DDFA_V2
+sh ./build.sh
+"""
+
+lm_detection_3ddfaV2.py
+
+5. Mouth centred video cropping
+mouth_cropping_3ddfaV2.py
+
+
+

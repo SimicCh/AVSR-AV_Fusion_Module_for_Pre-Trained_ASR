@@ -1,0 +1,36 @@
+mode: "test"
+experiment_name: "test_02_fullfinetune_inclWhisper__base_en"
+test:
+  work_dir: './experiments/base.en'
+  batchsize: 8
+  noise_categories: ['babble', 'music', 'noise', 'lrs3_sidespeaker']
+  SNR_values: [10, 5, 0, -5, -10]
+  # noise_categories: ['babble', 'music']
+  # SNR_values: [20, 10]
+dataset:
+  lrs3_prep_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_data2"
+  lrs3_lists_path: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_data2/split03"
+  lrs3_filelist: "test"
+  lrs3_audio_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_data2/audio"
+  lrs3_video_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_data2/cropped_videos_3ddfaV2"
+  musan_prep_dir: "/nfs/scratch/staff/simicch/00_data/03_musan/short-musan_ml1"
+  frameCropShape: [88,88]
+model:
+  AV_Fusion_attLayer: 12
+  AV_Fusion_attHeads: 12
+  AV_Fusion_blocksize: 160
+  AV_Fusion_inp_dim: 80
+  AV_Fusion_proc_dim: 80
+  AV_Fusion_out_dim: 80
+  Specfront_procChannels: 128
+  Specfront_layerNum: 7
+  Specfront_inp_dim: 80
+  Specfront_out_dim: 80
+  Lipnet_video_layer: [[2,1],[2,1],[2,1],[3,1]]
+  Lipnet_emb_size: 80
+  whisper_model: 'base.en'
+  max_tokens: 
+  whisper_chkp: './checkpoints/base_en__fullfinetune_final__Whisper.pt'
+  AV_Fusion_chkp: './checkpoints/base_en__fullfinetune_final__AV_Fusion.pt'
+
+
