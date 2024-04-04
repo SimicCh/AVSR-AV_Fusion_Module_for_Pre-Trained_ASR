@@ -67,6 +67,30 @@ We follow a three stage training strategy. Prepared config files for each traini
       <td>--</td>
     </tr>
   </tbody>
+  <tbody>
+    <tr>
+      <td>small_en__train01_pretrain_AV_Fusion.yaml</td>
+      <td>AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split (Whisper small.en)</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>small_en__train02_finetune_AV_Fusion_base_en.yaml</td>
+      <td>AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split (Whisper small.en)</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>small_en__train03_fullfinetune_AV_Fusion_Whisper.yaml</td>
+      <td>AV fusion module and Whisper full-fine-tuning using Lmel, Lenc and Ldec on 30h trainval split with learning rate decay (Whisper small.en)</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+  </tbody>
 </table>
 
 
