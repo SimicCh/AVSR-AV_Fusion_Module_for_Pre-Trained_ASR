@@ -58,8 +58,8 @@ This repo describes the usage of our approach on the [LRS3-Ted](https://www.robo
   </tbody>
   <tbody>
     <tr>
-      <td>base_en__train02_finetune_AV_Fusion_base_en.yaml</td>
-      <td>AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split (Whisper base.en)</td>
+      <td>base_en__train03_fullfinetune_AV_Fusion_Whisper.yaml</td>
+      <td>AV fusion module and Whisper full-fine-tuning using Lmel, Lenc and Ldec on 30h trainval split with learning rate decay (Whisper base.en)</td>
       <td>--</td>
       <td>--</td>
     </tr>
