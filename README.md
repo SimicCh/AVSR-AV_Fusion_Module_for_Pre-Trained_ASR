@@ -9,3 +9,8 @@ Our approach to audio-visual speech recognition (AVSR) builds on a pre-trained A
     <img src="/imgs/Overview.jpg" alt="Bildbeschreibung" style="width: 300px;"/>
 </p>
 
+# Training
+
+
+
+
