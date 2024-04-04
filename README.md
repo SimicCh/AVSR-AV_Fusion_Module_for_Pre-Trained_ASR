@@ -115,8 +115,14 @@ For testing trained models we provided config files in [configs](./configs/).
     <tr>
       <td>base_en__test_01_fintune_FusionOnly.yaml</td>
       <td>Test training results for config base_en__train02_finetune_AV_Fusion_base_en.yaml</td>
-  
   </tbody>
+
+  <tbody>
+    <tr>
+      <td>base_en__test_02_fullfintune_inclWhisper.yaml</td>
+      <td>Test training results for config base_en__train03_fullfinetune_AV_Fusion_Whisper.yaml</td>
+  </tbody>
+  
 </table>
 
 
