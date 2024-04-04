@@ -17,6 +17,11 @@ git clone https://github.com/SimicCh/ASR2AVSR_AV_Fusion_fft.git
 
 cd ASR2AVSR_AV_Fusion_fft
 
+python3 -m venv .venv
+
+sourve ./.venv/bin/activate
+
+pip install -r requirements.txt
 ```
 
 This repo describes the usage of our approach on the [LRS3-Ted](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) dataset with synthetic noise application from the [Musan](http://www.openslr.org/17/) dataset.
