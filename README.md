@@ -36,14 +36,14 @@ This repo describes the usage of our approach on the [LRS3-Ted](https://www.robo
       <th colspan="2">Pre-trained checkpoints</th>
     </tr>
     <tr>
-      <th>Header4</th>
-      <th>Header5</th>
+      <th>AV Fusion</th>
+      <th>Whisper</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">AV Fusion</td>
-      <td rowspan="2">Whisper</td>
+      <td rowspan="2">--</td>
+      <td rowspan="2">--</td>
       <td>h31</td>
       <td>h32</td>
     </tr>
