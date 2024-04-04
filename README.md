@@ -13,7 +13,7 @@ Our approach to audio-visual speech recognition (AVSR) builds on a pre-trained A
 
 Clone Repo and prepare a python virtual environment
 ```shell
-cd trainFrontend
+git clone 
 python saveh5.py
 ```
 
