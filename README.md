@@ -14,6 +14,7 @@ Our approach to audio-visual speech recognition (AVSR) builds on a pre-trained A
 Clone Repo and prepare a python virtual environment
 ```shell
 git clone https://github.com/SimicCh/ASR2AVSR_AV_Fusion_fft.git
+
 cd ASR2AVSR_AV_Fusion_fft
 
 ```
