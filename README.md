@@ -34,6 +34,10 @@ We follow a three stage training strategy. Prepared config files for each traini
 | Config file | description |
 |----------|----------|
 | {Whisper_model}__train01_pretrain_AV_Fusion.yaml | AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split  |
+| {Whisper_model}__train02_finetune_AV_Fusion_base_en.yaml | AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split  |
+| Zeile 2  | Zeile 2  |
+| Zeile 2  | Zeile 2  |
+| Zeile 2  | Zeile 2  |
 | Zeile 2  | Zeile 2  |
 | Zeile 3  | Zeile 3  |
 - **{Whisper_model}__train01_pretrain_AV_Fusion.yaml**: AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split
