@@ -13,7 +13,7 @@ Our approach to audio-visual speech recognition (AVSR) builds on a pre-trained A
 
 This repo describes the usage of our approach on the [LRS3-Ted](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) dataset with synthetic noise application from the [Musan](http://www.openslr.org/17/) dataset.
 
-1. Data pre-processing
+1. Data [pre-processing](./preparation/)
 
 
 
