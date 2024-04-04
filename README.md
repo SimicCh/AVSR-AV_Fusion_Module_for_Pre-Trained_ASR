@@ -4,6 +4,7 @@ This is the official repo for the paper [Self-Supervised Adaptive AV Fusion Modu
 
 # About
 Our approach to audio-visual speech recognition (AVSR) builds on a pre-trained ASR model (in this repo [Whisper OpenAI](https://github.com/openai/whisper)) and extends it with an upstream audio-visual fusion module to enable the ASR model to process multimodal inputs and improve the speech recogntion under noisy conditions. Details about our approach's architecture and training procedure and a comparison to the current SOTA approach to AVSR [AV-HuBERT](https://github.com/facebookresearch/av_hubert) can be taken from our [paper](https://arxiv.org/abs/2312.13873).
+
 <div style="text-align: center;">
     <img src="/imgs/Overview.jpg" alt="Bildbeschreibung" style="width: 300px;"/>
 </div>
