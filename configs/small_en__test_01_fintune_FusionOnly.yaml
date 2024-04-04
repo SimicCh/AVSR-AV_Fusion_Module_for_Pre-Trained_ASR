@@ -29,6 +29,6 @@ model:
   whisper_model: 'small.en'
   max_tokens: 
   whisper_chkp: 
-  AV_Fusion_chkp: './checkpoints/small_en__finetune_FusionOnly_final__AV_Fusion.pt'
+  AV_Fusion_chkp: 'path_to_AV_Fusion_Module_checkpoint'
 
 
