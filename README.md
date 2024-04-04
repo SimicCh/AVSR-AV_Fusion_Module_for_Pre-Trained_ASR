@@ -106,7 +106,7 @@ We recommend the following training steps:
 
 To fine-tune only the AV fusion module:
 
-3a. {Whisper_model}__train02_finetune_AV_Fusion.yaml - Set the learning rate decay 'lr_decay_per_epoch' to $$ 10^{1/4} $$
+3a. {Whisper_model}__train02_finetune_AV_Fusion.yaml - Set the learning rate decay 'lr_decay_per_epoch' to 10<sup>1/4</sup>
 
 ## Testing
 
