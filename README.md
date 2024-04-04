@@ -30,7 +30,10 @@ This repo describes the usage of our approach on the [LRS3-Ted](https://www.robo
 
 
 ## Training
-We follow a three stage training strategy. Config files for each training stage and Whisper baseline model can be found in [configs](./configs/)
+We follow a three stage training strategy. Config files for each training stage and Whisper baseline model can be found in [configs](./configs/).
+
+- {Whisper_model}__train01_pretrain_AV_Fusion.yaml: AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split
+- {Whisper_model}__train01_pretrain_AV_Fusion.yaml: AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split
 
 
 
