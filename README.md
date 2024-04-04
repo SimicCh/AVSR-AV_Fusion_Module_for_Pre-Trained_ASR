@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 This repo describes the usage of our approach on the [LRS3-Ted](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) dataset with synthetic noise application from the [Musan](http://www.openslr.org/17/) dataset. For data pre-processing follow the instructions at [preparation](./preparation/).
 
-| Header 1 | Header 2 |                         |
+| Header 1 | Header 2 |            ,            |
 |----------|----------|------------|------------|
 |          |          | Spalte 3   | Spalte 4   |
 | Zeile 1  | Zeile 1  | Inhalt 3.1 | Inhalt 4.1 |
