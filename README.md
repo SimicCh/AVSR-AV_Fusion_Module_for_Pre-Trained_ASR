@@ -110,8 +110,11 @@ For testing trained models we provided config files in [configs](./configs/).
       <th>description</th>
     </tr>
   </thead>
-  <tbody>
 
+  <tbody>
+    <tr>
+      <td>base_en__train01_pretrain_AV_Fusion.yaml</td>
+      <td>AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split (Whisper base.en)</td>
   
   </tbody>
 </table>
