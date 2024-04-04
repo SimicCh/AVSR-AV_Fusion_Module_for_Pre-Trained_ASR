@@ -100,6 +100,8 @@ To start the training:
 python train.py <path_to_config_file>
 ```
 
+## Testing
+
 
 
 
