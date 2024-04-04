@@ -33,18 +33,11 @@ This repo describes the usage of our approach on the [LRS3-Ted](https://www.robo
 We follow a three stage training strategy. Prepared config files for each training stage and Whisper baseline model can be found in [configs](./configs/).
 | Config file | description |
 |----------|----------|
-| {Whisper_model}__train01_pretrain_AV_Fusion.yaml | AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split  |
-| {Whisper_model}__train02_finetune_AV_Fusion_base_en.yaml | AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split  |
-| Zeile 2  | Zeile 2  |
-| Zeile 2  | Zeile 2  |
-| Zeile 2  | Zeile 2  |
-| Zeile 2  | Zeile 2  |
-| Zeile 3  | Zeile 3  |
-- **{Whisper_model}__train01_pretrain_AV_Fusion.yaml**: AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split
-- **{Whisper_model}__train02_finetune_AV_Fusion_base_en.yaml**: AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split
-- **{Whisper_model}__train03_fullfinetune_AV_Fusion_Whisper.yaml**: AV fusion module and Whisper full-fine-tuning using Lmel, Lenc and Ldec on 30h trainval split with learning rate decay
-- **{Whisper_model}__test_01_fintune_FusionOnly.yaml**: Test configuration for fine-tuned AV fusion module without Whisper fine-tuning
-- **{Whisper_model}__test_01_fintune_FusionOnly_V02.yaml**: Test configuration for full-fine-tuned AV fusion and Whisper model
+| {Whisper_model}__train01_pretrain_AV_Fusion.yaml | AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split |
+| {Whisper_model}__train02_finetune_AV_Fusion_base_en.yaml | AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split |
+| {Whisper_model}__train03_fullfinetune_AV_Fusion_Whisper.yaml | AV fusion module and Whisper full-fine-tuning using Lmel, Lenc and Ldec on 30h trainval split with learning rate decay |
+| {Whisper_model}__test_01_fintune_FusionOnly.yaml | Test configuration for fine-tuned AV fusion module without Whisper fine-tuning |
+| Whisper_model}__test_01_fintune_FusionOnly_V02.yaml | Test configuration for full-fine-tuned AV fusion and Whisper model |
 
 
 
