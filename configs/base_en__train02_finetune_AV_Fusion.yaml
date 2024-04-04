@@ -53,6 +53,6 @@ model:
   whisper_model: 'base.en'
   max_tokens: 
   whisper_chkp: 
-  AV_Fusion_chkp: "./experiments/base.en_test_code/01_pretrain_AV_Fusion__base_en_avfusion_epoch1_Final.pt"
+  AV_Fusion_chkp: 'path_to_AV_Fusion_Module_checkpoint after training base_en__train01_pretrain_AV_Fusion.yaml'
 
 
