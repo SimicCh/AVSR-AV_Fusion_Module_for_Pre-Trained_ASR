@@ -9,7 +9,13 @@ Our approach to audio-visual speech recognition (AVSR) builds on a pre-trained A
     <img src="/imgs/Overview.jpg" alt="Bildbeschreibung" style="width: 300px;"/>
 </p>
 
-# Training
+# Usage
+
+This repo describes the usage of our approach on the [LRS3-Ted](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) dataset
+
+1. Data pre-processing
+
+
 
 
 
