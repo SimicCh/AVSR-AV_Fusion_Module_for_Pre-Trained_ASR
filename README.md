@@ -54,7 +54,7 @@ We follow a three stage training strategy. Prepared config files for each traini
   </tbody>
   <tbody>
     <tr>
-      <td>base_en__train02_finetune_AV_Fusion_base_en.yaml</td>
+      <td>base_en__train02_finetune_AV_Fusion.yaml</td>
       <td>AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split (Whisper base.en)</td>
       <td>--</td>
       <td>--</td>
@@ -78,7 +78,7 @@ We follow a three stage training strategy. Prepared config files for each traini
   </tbody>
   <tbody>
     <tr>
-      <td>small_en__train02_finetune_AV_Fusion_base_en.yaml</td>
+      <td>small_en__train02_finetune_AV_Fusion.yaml</td>
       <td>AV fusion module fine-tuning using Lmel, Lenc and Ldec on 30h trainval split (Whisper small.en)</td>
       <td>--</td>
       <td>--</td>
