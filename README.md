@@ -112,6 +112,10 @@ For testing trained models we provided config files in [configs](./configs/).
   </thead>
   <tbody>
 
+  
+  </tbody>
+</table>
+
 
 
 
