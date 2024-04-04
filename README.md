@@ -31,9 +31,9 @@ This repo describes the usage of our approach on the [LRS3-Ted](https://www.robo
 <table>
   <thead>
     <tr>
-      <th rowspan="2">Header1</th>
-      <th rowspan="2">Header2</th>
-      <th colspan="2">Header3</th>
+      <th rowspan="2">Config file</th>
+      <th rowspan="2">description</th>
+      <th colspan="2">Pre-trained checkpoints</th>
     </tr>
     <tr>
       <th>Header4</th>
@@ -42,8 +42,8 @@ This repo describes the usage of our approach on the [LRS3-Ted](https://www.robo
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">merged1</td>
-      <td rowspan="2">merged2</td>
+      <td rowspan="2">AV Fusion</td>
+      <td rowspan="2">Whisper</td>
       <td>h31</td>
       <td>h32</td>
     </tr>
