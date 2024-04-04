@@ -30,7 +30,7 @@ model:
   Lipnet_emb_size: 80
   whisper_model: 'base.en'
   max_tokens: 
-  whisper_chkp: './checkpoints/base_en__fullfinetune_final__Whisper.pt'
-  AV_Fusion_chkp: './checkpoints/base_en__fullfinetune_final__AV_Fusion.pt'
+  whisper_chkp: 'path_to_Whisper_full_fine_tuning_checkpoint'
+  AV_Fusion_chkp: 'path_to_AV_Fusion_Module_checkpoint'
 
 
