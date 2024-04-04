@@ -102,7 +102,7 @@ python train.py <path_to_config_file>
 
 ## Testing
 
-
+For testing trained models we provided config files in [configs](./configs/).
 
 
 
