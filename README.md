@@ -19,7 +19,7 @@ cd ASR2AVSR_AV_Fusion_fft
 
 python3 -m venv .venv
 
-sourve ./.venv/bin/activate
+source ./.venv/bin/activate
 
 pip install -r requirements.txt
 ```
