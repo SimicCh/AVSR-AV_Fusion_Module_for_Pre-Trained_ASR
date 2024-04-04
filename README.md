@@ -28,7 +28,14 @@ pip install -r requirements.txt
 
 This repo describes the usage of our approach on the [LRS3-Ted](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) dataset with synthetic noise application from the [Musan](http://www.openslr.org/17/) dataset. For data pre-processing follow the instructions at [preparation](./preparation/).
 
+
 ## Training
+We follow a three stage training strategy. Config files for each training stage and Whisper baseline model can be found in [configs](./configs/)
+
+
+
+
+
 
 
 
