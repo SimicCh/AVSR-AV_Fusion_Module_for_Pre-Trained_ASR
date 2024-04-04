@@ -44,8 +44,14 @@ This repo describes the usage of our approach on the [LRS3-Ted](https://www.robo
     <tr>
       <td rowspan="2">base_en__train01_pretrain_AV_Fusion.yaml</td>
       <td rowspan="2">AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split (Whisper base.en)</td>
-      <td>h31</td>
-      <td>h32</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td rowspan="2">base_en__train02_finetune_AV_Fusion_base_en.yaml</td>
+      <td rowspan="2">AV fusion module pre-training using only Lmel and Lenc on 400h pretrain split (Whisper base.en)</td>
+      <td>--</td>
+      <td>--</td>
     </tr>
   </tbody>
 </table>
