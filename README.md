@@ -136,7 +136,7 @@ To start testing:
 
 ```shell
 python test.py <path_to_config_file>
-
+```
 
 
 
