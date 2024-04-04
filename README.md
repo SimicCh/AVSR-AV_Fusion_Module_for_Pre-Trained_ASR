@@ -14,6 +14,7 @@ Our approach to audio-visual speech recognition (AVSR) builds on a pre-trained A
 ## Preparation
 
 Clone Repo and prepare a python virtual environment
+
 ```shell
 git clone https://github.com/SimicCh/ASR2AVSR_AV_Fusion_fft.git
 
@@ -93,7 +94,11 @@ We follow a three stage training strategy. Prepared config files for each traini
   </tbody>
 </table>
 
+To start the training:
 
+```shell
+python train.py <path_to_config_file>
+```
 
 
 
