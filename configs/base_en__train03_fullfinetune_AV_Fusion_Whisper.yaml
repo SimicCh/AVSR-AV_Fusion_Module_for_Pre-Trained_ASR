@@ -3,7 +3,7 @@ experiment_name: "03_fullfinetune_AV_Fusion_Whisper__base_en"
 training:
   epochs: 2
   start_epoch: 0
-  work_dir: './experiments/base.en_test_code'
+  work_dir: './experiments/base.en'
   train_av_fusion: True
   train_whisper: False
   lr: 0.0001
