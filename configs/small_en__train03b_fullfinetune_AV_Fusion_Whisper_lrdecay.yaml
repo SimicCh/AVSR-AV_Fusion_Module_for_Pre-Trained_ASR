@@ -1,22 +1,22 @@
 mode: "train"
-experiment_name: "01_pretrain_AV_Fusion__base_en"
+experiment_name: "03a_finetune_AV_Fusion__base_en"
 training:
-  epochs: 2
-  start_epoch: 0
+  epochs: 20
+  start_epoch: 8
   work_dir: './experiments/base.en'
   train_av_fusion: True
-  train_whisper: False
-  lr: 0.0001
-  lr_decay_per_epoch: 0.0
+  train_whisper: True
+  lr: 0.00015849
+  lr_decay_per_epoch: 1.5849
   log_frequency: 250
   lossfactor_mel: 1.0
   lossfactor_audiofeatures: 2.0
-  lossfactor_decoder: 0.0
+  lossfactor_decoder: 2.0
 dataset:
   lrs3_prep_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_test_repo"
   lrs3_lists_path: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_test_repo"
-  lrs3_filelist_training: "pretrain_train"
-  lrs3_filelist_validation: "pretrain_valid"
+  lrs3_filelist_training: "trainval_train"
+  lrs3_filelist_validation: "trainval_valid"
   validation_num_examples: 1000
   lrs3_audio_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_test_repo/audio"
   lrs3_video_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_test_repo/cropped_videos_3ddfaV2"
@@ -24,7 +24,7 @@ dataset:
   musan_type: "all"
   SNR_range_training: [-20, 50]
   SNR_range_valid: [-10, 10]
-  batchsize_training: 2
+  batchsize_training: 8
   batchsize_valid: 2
   specaug_flag: True
   specaug_sequmaxlen: 100
@@ -53,6 +53,6 @@ model:
   whisper_model: 'base.en'
   max_tokens: 
   whisper_chkp: 
-  AV_Fusion_chkp: 
+  AV_Fusion_chkp: 'path_to_AV_Fusion_Module_checkpoint after training base_en__train02_finetune_AV_Fusion.yaml'
 
 

@@ -26,7 +26,7 @@ dataset:
   SNR_range_valid: [-10, 10]
   batchsize_training: 8
   batchsize_valid: 2
-  specaug_flag: true
+  specaug_flag: True
   specaug_sequmaxlen: 100
   specaug_maxlenratio: 0.3
   specaug_maxchannels: 27
