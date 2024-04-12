@@ -53,6 +53,6 @@ model:
   whisper_model: 'small.en'
   max_tokens: 
   whisper_chkp: 
-  AV_Fusion_chkp: 'path_to_AV_Fusion_Module_checkpoint after training base_en__train02_finetune_AV_Fusion.yaml'
+  AV_Fusion_chkp: 'path_to_AV_Fusion_Module_checkpoint after training small_en__train02_finetune_AV_Fusion.yaml'
 
 
