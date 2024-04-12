@@ -6,7 +6,7 @@ training:
   work_dir: './experiments/base.en'
   train_av_fusion: True
   train_whisper: False
-  lr: 0.0001
+  lr: 0.00001
   lr_decay_per_epoch: 0.0
   log_frequency: 250
   lossfactor_mel: 1.0
