@@ -7,6 +7,18 @@ Before preparation you need to download the [LRS3-Ted](https://www.robots.ox.ac.
 ## 1. Create file.list und label.list
 
 
+## 2. Split pretrain and trainval for training and validation
+
+
+## 3. Extract audio
+
+
+## 4. Landmark detection 3ddfaV2
+
+
+## 5. Mouth centred video cropping
+
+
 
 
 Ablauf
