@@ -1,4 +1,11 @@
 
+Preparation
+
+
+Before preparation you need to download the [LRS3-Ted](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) and the [Musan](http://www.openslr.org/17/) dataset. 
+
+
+
 
 Ablauf
 
