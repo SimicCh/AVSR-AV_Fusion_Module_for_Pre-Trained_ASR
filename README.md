@@ -93,8 +93,8 @@ We follow a three stage training strategy. Prepared config files for each traini
     </tr>
   </tbody>
 </table>
-*Pre-trained models can be provided on request
-
+*Pre-trained models can be provided on request.
+ \n
 
 To start the training:
 
