@@ -15,6 +15,10 @@ SPLIT_DEFINITION - can be pretrain, trainval or test for LRS3 dataset.\
 <br>
 
 ## 2. Split pretrain and trainval for training and validation
+Perform train:val split on pretrain ord trainval:
+```shell
+python3 create_train_val_split.py --lrs3 <PATH_TO_LRS3> --prep_dir <OUTPUT_PATH> --splitname <SPLIT_DEFINITION>
+```
 
 
 ## 3. Extract audio
