@@ -9,6 +9,8 @@ To start the file.list and label.list generation:
 ```shell
 python3 create_filelist_labellist.py --lrs3 <PATH_TO_LRS3> --prep_dir <OUTPUT_PATH> --splitname <SPLIT_DEFINITION>
 ```
+<PATH_TO_LRS3> Path to raw LRS3 data
+<OUTPUT_PATH> Path for preparation (output)
 <SPLIT_DEFINITION> can be pretrain, trainval or test for LRS3 dataset.
 <br>
 <br>
