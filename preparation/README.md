@@ -5,33 +5,50 @@
 Before preparation you need to download the [LRS3-Ted](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) and the [Musan](http://www.openslr.org/17/) dataset. Then follow the next steps:
 
 ## 1. Create file.list und label.list
-To start the file.list and label.list generation:
+To start the file.list and label.list generation.
 ```shell
 python3 create_filelist_labellist.py \
-   --lrs3 <PATH_TO_LRS3>\
-   --prep_dir <OUTPUT_PATH>\
+   --lrs3 <PATH_TO_LRS3> \
+   --prep_dir <OUTPUT_PATH> \
    --splitname <SPLIT_DEFINITION>
 ```
-PATH_TO_LRS3 - Path to raw LRS3 data\
-OUTPUT_PATH - Path for preparation (output)\
-SPLIT_DEFINITION - can be pretrain, trainval or test for LRS3 dataset.\
+PATH_TO_LRS3 - Path to raw LRS3 data \
+OUTPUT_PATH - Path for preparation (output) \
+SPLIT_DEFINITION - can be pretrain, trainval or test for LRS3 dataset \
 <br>
 
 ## 2. Split pretrain and trainval for training and validation
-Perform train:val split on pretrain ord trainval:
+Perform train:val split on pretrain ord trainval.
 ```shell
-python3 create_train_val_split.py\
-   --prep_dir <PREPARATION_PATH>\
-   --splitname <SPLIT_DEFINITION>\
+python3 create_train_val_split.py \
+   --prep_dir <PREPARATION_PATH> \
+   --splitname <SPLIT_DEFINITION> \
    --valid_ratio <VALID_RATIO>
 ```
 PREPARATION_PATH - Path to preparation \
-SPLIT_DEFINITION - can be pretrain, trainval or test for LRS3 dataset.\
+SPLIT_DEFINITION - can be pretrain, trainval or test for LRS3 dataset \
 VALID_RATIO - Ratio of validation part (in percent) \
 <br>
 
 
 ## 3. Extract audio
+Etract audio from .mp4 files.
+```shell
+python3 extract_audio.py \
+   --lrs3 <PATH_TO_LRS3> \
+   --prep_dir <PREPARATION_PATH> \
+   --file_list <FILE_LIST> \
+   --out_dir <AUDIO_DIR> \
+   --rank <RANK> \
+   --nshard <NUM_SHARDS>
+```
+PATH_TO_LRS3 - Path to raw LRS3 data \
+PREPARATION_PATH - Path to preparation \
+FILE_LIST - file.list (e.g. file.list.pretrain) from step 2 \
+AUDIO_DIR -  Output directory for audio files \
+RANK - Selected rank \
+NUM_SHARDS - Number of shards \
+<br>
 
 
 ## 4. Landmark detection 3ddfaV2
