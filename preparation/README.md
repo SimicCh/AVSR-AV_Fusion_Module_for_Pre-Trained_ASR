@@ -52,6 +52,24 @@ NUM_SHARDS - Number of shards \
 
 
 ## 4. Landmark detection 3ddfaV2
+Landmark detection with 3ddfaV2.
+
+```shell
+git clone https://github.com/cleardusk/3DDFA_V2.git
+cd 3DDFA_V2
+sh ./build.sh
+```
+
+```shell
+python3 extract_audio.py \
+   --lrs3 <PATH_TO_LRS3> \
+   --prep_dir <PREPARATION_PATH> \
+   --file_list <FILE_LIST> \
+   --out_dir <AUDIO_DIR> \
+   --rank <RANK> \
+   --nshard <NUM_SHARDS>
+```
+
 
 
 ## 5. Mouth centred video cropping
