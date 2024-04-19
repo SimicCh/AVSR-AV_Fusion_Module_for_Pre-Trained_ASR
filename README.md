@@ -109,7 +109,7 @@ We follow a three stage training strategy. Prepared config files for each traini
     </tr>
   </tbody>
 </table>
-*Pre-trained models can be provided on request.
+*Final checkpoints can be provided on request.
 <br/>
 <br/>
  
