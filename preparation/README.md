@@ -23,8 +23,12 @@ Perform train:val split on pretrain ord trainval:
 python3 create_train_val_split.py\
    --prep_dir <PREPARATION_PATH>\
    --splitname <SPLIT_DEFINITION>\
-   --valid_ratio <VALID_SIZE>
+   --valid_ratio <VALID_RATIO>
 ```
+PREPARATION_PATH - Path to preparation \
+SPLIT_DEFINITION - can be pretrain, trainval or test for LRS3 dataset.\
+VALID_RATIO - Ratio of validation part (in percent) \
+<br>
 
 
 ## 3. Extract audio
