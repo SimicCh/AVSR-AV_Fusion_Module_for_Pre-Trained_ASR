@@ -5,9 +5,9 @@
 Before preparation you need to download the [LRS3-Ted](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) and the [Musan](http://www.openslr.org/17/) dataset. Then follow the next steps:
 
 ## 1. Create file.list und label.list
-'''
+```shell
 python3 create_filelist_labellist.py --lrs3 <PATH_TO_LRS3>
-'''
+```
 
 
 ## 2. Split pretrain and trainval for training and validation
