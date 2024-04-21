@@ -79,21 +79,31 @@ RANK - Selected rank \
 NUM_SHARDS - Number of shards \
 <br>
 
-
-
-    parser.add_argument('--lrs3', type=str, help='lrs3 root dir')
+## 5. Mouth centred video cropping
+Video mouth cropping with prepared landmarks.
+```shell
+python3 lm_detection_3ddfaV2.py \
+   --prep_dir <PREPARATION_PATH> \
+   --landmark_dir <LM_DIR> \
+   --file_list <FILE_LIST> \
+   --out_dir <LM_DIR> \
+   --config <3DDFAV2_CONFIG> \
+   --rank <RANK> \
+   --nshard <NUM_SHARDS>
+```
     parser.add_argument('--prep_dir', type=str, help='prep root dir')
+    parser.add_argument('--landmark_dir', type=str, help='prep root dir')
+    parser.add_argument('--video_dir', type=str, help='prep root dir')
+    parser.add_argument('--out_dir', type=str, help='prep root dir')
     parser.add_argument('--file_list', type=str, help='file list')
-    parser.add_argument('--out_dir', type=str, help='output dir')
-    parser.add_argument('--config', type=str, help='yaml config file')
-    parser.add_argument('--onnx', action='store_true', default=False)
-    parser.add_argument('--mode', default='cpu', type=str, help='gpu or cpu mode')
+    parser.add_argument('--meanface_path', type=str, help='Meanface')
     parser.add_argument('--rank', type=int, help='rank id')
     parser.add_argument('--nshard', type=int, help='number of shards')
-
-
-## 5. Mouth centred video cropping
-
+    parser.add_argument('--start_idx', type=int, help='number of shards')
+    parser.add_argument('--stop_idx', type=int, help='number of shards')
+    parser.add_argument('--window_margin', type=int, help='number of shards')
+    parser.add_argument('--crop_height', type=int, help='number of shards')
+    parser.add_argument('--crop_width', type=int, help='number of shards')
 
 
 
