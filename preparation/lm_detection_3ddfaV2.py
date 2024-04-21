@@ -103,14 +103,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
 
-    """
-    root_orig_data = "/nfs/data/LRS3_Dataset"
-    prep_dir = "/net/ml1/mnt/md0/scratch/staff/simicch/00_data/02_LRS3/prep_data2"
-    file_list = "file.list.trainval"
-    out_dir = "/net/ml1/mnt/md0/scratch/staff/simicch/00_data/02_LRS3/prep_data2/landmarks_dlib"
-    """
-
+    print('args:')
     print(args)
+    print()
+    
     root_orig_data = args.lrs3
     prep_dir = args.prep_dir
     file_list = args.file_list
