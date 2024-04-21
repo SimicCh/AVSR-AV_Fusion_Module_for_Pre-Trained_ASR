@@ -83,27 +83,23 @@ NUM_SHARDS - Number of shards \
 Video mouth cropping with prepared landmarks.
 ```shell
 python3 lm_detection_3ddfaV2.py \
+   --lrs3 <PATH_TO_LRS3> \
    --prep_dir <PREPARATION_PATH> \
    --landmark_dir <LM_DIR> \
+   --out_dir <CROPPED_DIR> \
    --file_list <FILE_LIST> \
-   --out_dir <LM_DIR> \
-   --config <3DDFAV2_CONFIG> \
    --rank <RANK> \
    --nshard <NUM_SHARDS>
 ```
-    parser.add_argument('--prep_dir', type=str, help='prep root dir')
-    parser.add_argument('--landmark_dir', type=str, help='prep root dir')
-    parser.add_argument('--video_dir', type=str, help='prep root dir')
-    parser.add_argument('--out_dir', type=str, help='prep root dir')
-    parser.add_argument('--file_list', type=str, help='file list')
-    parser.add_argument('--meanface_path', type=str, help='Meanface')
-    parser.add_argument('--rank', type=int, help='rank id')
-    parser.add_argument('--nshard', type=int, help='number of shards')
-    parser.add_argument('--start_idx', type=int, help='number of shards')
-    parser.add_argument('--stop_idx', type=int, help='number of shards')
-    parser.add_argument('--window_margin', type=int, help='number of shards')
-    parser.add_argument('--crop_height', type=int, help='number of shards')
-    parser.add_argument('--crop_width', type=int, help='number of shards')
+PATH_TO_LRS3 - Path to raw LRS3 data \
+PREPARATION_PATH - Path to preparation \
+LM_DIR - Directory with landmark files \
+CROPPED_DIR - Output directory for mouth region cropped video files \
+FILE_LIST - file.list (e.g. file.list.pretrain) from step 2 \
+RANK - Selected rank \
+NUM_SHARDS - Number of shards \
+<br>
+
 
 
 
