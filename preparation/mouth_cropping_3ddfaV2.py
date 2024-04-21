@@ -27,12 +27,6 @@ if __name__ == '__main__':
     parser.add_argument('--crop_width', type=int, default=96, help='Width of cropping window')
     args = parser.parse_args()
 
-    """
-    root_orig_data = "/nfs/data/LRS3_Dataset"
-    landmark_dir = "/net/ml1/mnt/md0/scratch/staff/simicch/00_data/02_LRS3/prep_data2"
-    file_list = "file.list.trainval"
-    """
-
     print(args)
     video_dir = args.lrs3
     prep_dir = args.prep_dir
