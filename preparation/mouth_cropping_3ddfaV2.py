@@ -20,11 +20,11 @@ if __name__ == '__main__':
     parser.add_argument('--meanface_path', type=str, help='Meanface')
     parser.add_argument('--rank', type=int, help='rank id')
     parser.add_argument('--nshard', type=int, help='number of shards')
-    parser.add_argument('--start_idx', type=int, help='number of shards')
-    parser.add_argument('--stop_idx', type=int, help='number of shards')
-    parser.add_argument('--window_margin', type=int, help='number of shards')
-    parser.add_argument('--crop_height', type=int, help='number of shards')
-    parser.add_argument('--crop_width', type=int, help='number of shards')
+    parser.add_argument('--start_idx', type=int, default=48, help='Start idx of mouth landmarks')
+    parser.add_argument('--stop_idx', type=int, default=68, help='End idx of mouth landmarks')
+    parser.add_argument('--window_margin', type=int, default=12, help='Margin for mouth cropping (in pixel)')
+    parser.add_argument('--crop_height', type=int, default=96, help='Height of cropping window')
+    parser.add_argument('--crop_width', type=int, default=96, help='Width of cropping window')
     args = parser.parse_args()
 
     """
