@@ -25,7 +25,7 @@ python3 create_train_val_split.py \
    --splitname <SPLIT_DEFINITION> \
    --valid_ratio <VALID_RATIO>
 ```
-PREPARATION_PATH - Path to preparation \
+PREPARATION_PATH - Path to preparation directory \
 SPLIT_DEFINITION - can be pretrain, trainval or test for LRS3 dataset \
 VALID_RATIO - Ratio of validation part (in percent) \
 <br>
@@ -43,7 +43,7 @@ python3 extract_audio.py \
    --nshard <NUM_SHARDS>
 ```
 PATH_TO_LRS3 - Path to raw LRS3 data \
-PREPARATION_PATH - Path to preparation \
+PREPARATION_PATH - Path to preparation directory \
 FILE_LIST - file.list (e.g. file.list.pretrain) from step 2 \
 AUDIO_DIR -  Output directory for audio files \
 RANK - Selected rank \
@@ -71,7 +71,7 @@ python3 lm_detection_3ddfaV2.py \
    --nshard <NUM_SHARDS>
 ```
 PATH_TO_LRS3 - Path to raw LRS3 data \
-PREPARATION_PATH - Path to preparation \
+PREPARATION_PATH - Path to preparation directory \
 FILE_LIST - file.list (e.g. file.list.pretrain) from step 2 \
 LM_DIR -  Output directory for landmark files \
 3DDFAV2_CONFIG - Path to 3ddfaV2 config - Usually ./configs/mb1_120x120.yml \
@@ -92,7 +92,7 @@ python3 lm_detection_3ddfaV2.py \
    --nshard <NUM_SHARDS>
 ```
 PATH_TO_LRS3 - Path to raw LRS3 data \
-PREPARATION_PATH - Path to preparation \
+PREPARATION_PATH - Path to preparation directory \
 LM_DIR - Directory with landmark files \
 CROPPED_DIR - Output directory for mouth region cropped video files \
 FILE_LIST - file.list (e.g. file.list.pretrain) from step 2 \
@@ -101,30 +101,15 @@ NUM_SHARDS - Number of shards \
 <br>
 
 
-
-
-Ablauf
-
-1. Create file.list and label.list files
-create_filelist_labellist.py 
-
-2. Split pretrain and trainval for training and validation 
-create_train_val_split.py
-
-3. Extract audio
-extract_audio.py
-
-4. Landmark detection 3ddfaV2
-"""
-git clone https://github.com/cleardusk/3DDFA_V2.git
-cd 3DDFA_V2
-sh ./build.sh
-"""
-
-lm_detection_3ddfaV2.py
-
-5. Mouth centred video cropping
-mouth_cropping_3ddfaV2.py
+## 6. Musan noise
+Prepare noise files and file.lists for musan.
+```shell
+python3 prepare_musan_mod.py \
+   --musan <PATH_TO_MUSAN> \
+   --prep_dir <PREPARATION_PATH>
+```
+PATH_TO_MUSAN - Path to raw musan \
+PREPARATION_PATH - Path to musan preparation directory (output) \
 
 
 
