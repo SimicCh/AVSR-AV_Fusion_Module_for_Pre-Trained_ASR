@@ -12,9 +12,9 @@ from utils.utils_mouth_cropping import *
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='LRS3 preprocess pretrain dir', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument('--lrs3', type=str, help='LRS3 root dir')
     parser.add_argument('--prep_dir', type=str, help='prep root dir')
     parser.add_argument('--landmark_dir', type=str, help='prep root dir')
-    parser.add_argument('--video_dir', type=str, help='prep root dir')
     parser.add_argument('--out_dir', type=str, help='prep root dir')
     parser.add_argument('--file_list', type=str, help='file list')
     parser.add_argument('--meanface_path', type=str, help='Meanface')
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     print(args)
     prep_dir = args.prep_dir
     landmark_dir = args.landmark_dir
-    video_dir = args.video_dir
+    video_dir = args.lrs3
     out_dir = args.out_dir
     file_list = args.file_list
     meanface_path = args.meanface_path
