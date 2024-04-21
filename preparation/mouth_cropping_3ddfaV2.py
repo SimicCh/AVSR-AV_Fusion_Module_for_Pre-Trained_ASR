@@ -34,9 +34,9 @@ if __name__ == '__main__':
     """
 
     print(args)
+    video_dir = args.lrs3
     prep_dir = args.prep_dir
     landmark_dir = args.landmark_dir
-    video_dir = args.lrs3
     out_dir = args.out_dir
     file_list = args.file_list
     meanface_path = args.meanface_path
