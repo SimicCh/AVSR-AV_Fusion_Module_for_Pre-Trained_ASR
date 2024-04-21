@@ -27,7 +27,10 @@ if __name__ == '__main__':
     parser.add_argument('--crop_width', type=int, default=96, help='Width of cropping window')
     args = parser.parse_args()
 
+    print('args:')
     print(args)
+    print()
+    
     video_dir = args.lrs3
     prep_dir = args.prep_dir
     landmark_dir = args.landmark_dir
