@@ -13,14 +13,14 @@ training:
   lossfactor_audiofeatures: 2.0
   lossfactor_decoder: 0.0
 dataset:
-  lrs3_prep_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_test_repo"
-  lrs3_lists_path: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_test_repo"
+  lrs3_prep_dir: 'path_to_lrs3'
+  lrs3_lists_path: 'path_to_lrs3_file.lists'
   lrs3_filelist_training: "pretrain_train"
   lrs3_filelist_validation: "pretrain_valid"
   validation_num_examples: 1000
-  lrs3_audio_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_test_repo/audio"
-  lrs3_video_dir: "/nfs/scratch/staff/simicch/00_data/02_LRS3/prep_test_repo/cropped_videos_3ddfaV2"
-  musan_prep_dir: "/nfs/scratch/staff/simicch/00_data/03_musan/prep_repo"
+  lrs3_audio_dir: 'path_to_audio_files'
+  lrs3_video_dir: 'path_to_cropped_video_files'
+  musan_prep_dir: 'path_to_prepared_musan'
   musan_type: "all"
   SNR_range_training: [-20, 50]
   SNR_range_valid: [-10, 10]
